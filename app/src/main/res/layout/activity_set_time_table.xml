@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_time_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#343434"
+    tools:context="com.example.daniel.studyhelper.SetTimeTableActivity">
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:id="@+id/setTimetable"
+        android:text="Set Timetable"
+        android:layout_below="@id/app_bar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setTimetable"
+        android:id="@+id/txtClass"
+        android:textColor="#FFF"
+        android:textSize="17sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spinner"
+        android:background="#D3D3D3"
+        android:layout_below="@+id/txtClass"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        android:text="start time"
+        android:layout_below="@id/spinner"
+        android:id="@+id/txtStartTime" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        android:text="finish time"
+        android:gravity="right"
+        android:layout_below="@id/spinner"
+        android:id="@+id/txtFinTime" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:background="#343434"
+        android:numbersTextColor="#343434"
+        android:amPmTextColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:id="@+id/timePicker" />
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:background="#343434"
+        android:numbersTextColor="#343434"
+        android:amPmTextColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:headerBackground="#FF6347"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:id="@+id/timePickerFin" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switchTime" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:id="@+id/addBtn" />
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nextBtn" />
+
+</RelativeLayout>

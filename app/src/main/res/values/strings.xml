@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Study helper</string>
+    <string-array name="days_of_the_week">
+        <item name="Monday" >Monday</item>
+        <item name="Tuesday">Tuesday</item>
+        <item name="Wednesday">Wednesday</item>
+        <item name="Thursday">Thursday</item>
+        <item name="Friday">Friday</item>
+    </string-array>
+    <string-array name="assign_type">
+        <item name="Test">Test</item>
+        <item name="Assignment">Assignment</item>
+        <item name="Exam">Exam</item>
+    </string-array>
+</resources>

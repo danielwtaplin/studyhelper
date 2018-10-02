@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daniel.studyhelper.SettingsActivity"
+    android:background="#343434">
+<include android:id="@id/app_bar"
+    layout="@layout/app_bar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:id="@+id/settingsTxt"
+        android:text="Class Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsTxt"
+        android:id="@+id/infoIcon"
+        android:src="@drawable/ic_info_outline_white_2x"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timetableIcon"
+        android:id="@+id/resultIcon"
+        android:src="@drawable/ic_graph"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/removeIcon"
+        android:id="@+id/deleteIcon"
+        android:src="@drawable/ic_delete_forever_white_2x"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoIcon"
+        android:id="@+id/timetableIcon"
+        android:src="@drawable/ic_today_white_48dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeIcon"
+        android:src="@drawable/ic_delete_sweep_white_2x"
+        android:layout_below="@+id/resultIcon"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="Add class information"
+        android:id="@+id/infoTxt"
+        android:textSize="20dp"
+        android:layout_below="@+id/settingsTxt"
+        android:layout_toEndOf="@+id/infoIcon"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:id="@+id/binTxt"
+        android:text="Delete all classes"
+        android:textSize="20dp"
+        android:layout_below="@+id/removeIcon"
+        android:layout_toEndOf="@+id/deleteIcon"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:id="@+id/timetableTxt"
+        android:text="Organize Timetable"
+        android:textSize="20dp"
+        android:layout_below="@+id/infoIcon"
+        android:layout_toEndOf="@+id/timetableIcon"
+        android:layout_marginTop="12dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:id="@+id/removeTxt"
+        android:text="Remove classes"
+        android:textSize="20dp"
+        android:layout_below="@+id/resultIcon"
+        android:layout_toEndOf="@+id/removeIcon"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:id="@+id/resultTxt"
+        android:text="Results"
+        android:textSize="20dp"
+        android:layout_below="@+id/timetableIcon"
+        android:layout_toEndOf="@+id/resultIcon"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

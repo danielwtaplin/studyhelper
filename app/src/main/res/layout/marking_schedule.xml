@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#343434">
+    <include android:id="@id/app_bar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/markingTxt"
+        android:text="Marking Schedule"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/markingTxt"
+        android:id="@+id/txtClass"
+        android:textColor="#FFF"
+        android:textSize="17sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spinner"
+        android:background="#D3D3D3"
+        android:layout_below="@+id/txtType"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"
+        android:layout_marginStart="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtType"
+        android:textColor="#FFF"
+        android:text="Assessment type"
+        android:textSize="15sp"
+        android:layout_below="@+id/txtClass"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginTop="11dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:textColor="#FFF"
+        android:text="Assessment name (optional)"
+        android:textSize="15sp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginTop="11dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_alignStart="@id/txtName"
+        android:id="@+id/editName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWeight"
+        android:textColor="#FFF"
+        android:text="Assessment weighting"
+        android:textSize="15sp"
+        android:layout_below="@+id/editName"
+        android:layout_alignStart="@+id/editName"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:textColor="#FFF"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@id/txtWeight"
+        android:layout_below="@id/txtWeight"
+        android:id="@+id/editWeight"
+        android:layout_marginStart="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent"
+        android:textColor="#FFF"
+        android:text="%"
+        android:textSize="17sp"
+        android:layout_below="@+id/txtWeight"
+        android:layout_alignEnd="@+id/editWeight"
+        android:layout_marginTop="11dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/btnSubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/txtWeight"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:layout_marginStart="120dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnNext"
+        />
+
+</RelativeLayout>

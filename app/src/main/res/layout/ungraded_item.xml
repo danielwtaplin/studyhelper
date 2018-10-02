@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/subjectTxt"
+    android:textColor="#FFFFFF"
+    android:textSize="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTxt"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_below="@+id/subjectTxt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weightTxt"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_below="@+id/nameTxt"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:text="Result"
+    android:textColor="#FFFFFF"
+    android:textSize="14dp"
+    android:layout_below="@+id/weightTxt"
+    android:id="@+id/resultTxt" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:inputType="number"
+        android:ems="6"
+        android:textColor="#FFF"
+        android:layout_height="wrap_content"
+        android:id="@+id/addResult"
+        android:layout_toRightOf="@+id/resultTxt"
+        android:layout_alignBottom="@+id/resultTxt"
+        android:layout_below="@+id/nameTxt" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:id="@+id/gradeBtn"
+        android:layout_below="@+id/addResult" />
+    
+</RelativeLayout>

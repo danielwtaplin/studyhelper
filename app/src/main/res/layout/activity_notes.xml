@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daniel.studyhelper.NotesActivity"
+    android:background="#343434">
+    <include android:id="@id/app_bar"
+        layout="@layout/app_bar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:text="Class notes"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:id="@+id/txtClassNotes" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtClassNotes"
+        android:text="Make a note"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:id="@+id/txtHeading" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:text="All"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/txtAll" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:text="Favourites"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/txtFave" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAll"
+        android:layout_above="@+id/noteBtn"
+        android:visibility="invisible"
+        android:id="@+id/noteListView"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="#FFF"
+        android:ems="10"
+        android:id="@+id/noteEditText"
+        android:layout_below="@+id/txtHeading"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_white_18dp"
+        android:layout_below="@+id/txtHeading"
+        android:layout_toEndOf="@+id/noteEditText"
+        android:id="@+id/penIcon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteEditText"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:id="@+id/txtSubject" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_white_18dp"
+        android:layout_below="@+id/noteEditText"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:id="@+id/nxtIcon"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_event_note_white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/noteBtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/noteBtn"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:text="View notes"
+        android:textSize="18sp"
+        android:id="@+id/noteLink" />
+
+
+
+</RelativeLayout>
